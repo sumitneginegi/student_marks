@@ -5,7 +5,11 @@ const stdSchema = new mongoose.Schema(
     name: { type: String, required: true },
     subject:{ type: String, required: true },
     marks:{type:Number,required:true},
-    rollno:{type:Number,required:true,unique:true}
+    rollno:{type:Number,required:true,unique:true},
+    isDeleted: {
+      type: Boolean,
+      default: false
+  },
     // email: { type: String, required: true, unique: true },
     // password: { type: String, required: true }, 
   
